@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46B0A2BF-F668-4933-82BC-14F3BEE12EAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layer2\Layer3\Arytmetyka\Arytmetyka\Artmetyka.cs" />
+    <Compile Include="Layer2\Layer3\Arytmetyka\Arytmetyka\Trygonometria.cs" />
+    <Compile Include="Layer2\Layer3\Figury_3D\Objetosci\Czworoscian.cs" />
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Single_matrix_operations.cs" />
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\_2_matrixes_operations.cs" />
+    <Compile Include="Layer2\Technical\Exceptions_handling.cs" />
+    <Compile Include="Layer2\Technical\Other_Methods.cs" />
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Iloczyn_Kroneckera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Iloczyn_Kroneckera.Designer.cs">
+      <DependentUpon>Iloczyn_Kroneckera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Iloczyn_Hadamarda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Iloczyn_Hadamarda.Designer.cs">
+      <DependentUpon>Iloczyn_Hadamarda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Dodawanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Dodawanie.Designer.cs">
+      <DependentUpon>Dodawanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Charakterystyka_macierzy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Charakterystyka_macierzy.Designer.cs">
+      <DependentUpon>Charakterystyka_macierzy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Deklaracja_drugiej_macierzy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Deklaracja_drugiej_macierzy.Designer.cs">
+      <DependentUpon>Deklaracja_drugiej_macierzy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Deklaracja_pierwszej_macierzy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Deklaracja_pierwszej_macierzy.Designer.cs">
+      <DependentUpon>Deklaracja_pierwszej_macierzy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Arytmetyka\Funkcja_kwadratowa_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Arytmetyka\Funkcja_kwadratowa_Form.Designer.cs">
+      <DependentUpon>Funkcja_kwadratowa_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Arytmetyka\Funkcja_liniowa_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Arytmetyka\Funkcja_liniowa_Form.Designer.cs">
+      <DependentUpon>Funkcja_liniowa_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Arytmetyka\Dzielenie_z_resztą_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Arytmetyka\Dzielenie_z_resztą_Form.Designer.cs">
+      <DependentUpon>Dzielenie_z_resztą_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_3D\Kula_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_3D\Kula_Form.Designer.cs">
+      <DependentUpon>Kula_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_2D\Czworokąt_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_2D\Czworokąt_Form.Designer.cs">
+      <DependentUpon>Czworokąt_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_2D\Koło_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_2D\Koło_Form.Designer.cs">
+      <DependentUpon>Koło_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Arytmetyka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Arytmetyka.Designer.cs">
+      <DependentUpon>Arytmetyka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Figury_3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Figury_3D.Designer.cs">
+      <DependentUpon>Figury_3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Macierze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Macierze.Designer.cs">
+      <DependentUpon>Macierze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Operacje_na_dwóch_macierzach_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Operacje_na_dwóch_macierzach_Form.Designer.cs">
+      <DependentUpon>Operacje_na_dwóch_macierzach_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Operacje_na_jednej_macierzy_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Operacje_na_jednej_macierzy_Form.Designer.cs">
+      <DependentUpon>Operacje_na_jednej_macierzy_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Liczenie_wyznacznika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Liczenie_wyznacznika.Designer.cs">
+      <DependentUpon>Liczenie_wyznacznika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Liczenie_śladu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Liczenie_śladu.Designer.cs">
+      <DependentUpon>Liczenie_śladu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Liczenie_macierzy_odwrotnej.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Liczenie_macierzy_odwrotnej.Designer.cs">
+      <DependentUpon>Liczenie_macierzy_odwrotnej.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Menu.Designer.cs">
+      <DependentUpon>Main_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Figury_2D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Figury_2D.Designer.cs">
+      <DependentUpon>Figury_2D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_3D\Ostrosłup_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_3D\Ostrosłup_Form.Designer.cs">
+      <DependentUpon>Ostrosłup_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Arytmetyka\NWW_NWD_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Arytmetyka\NWW_NWD_Form.Designer.cs">
+      <DependentUpon>NWW_NWD_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Operacje_elementarne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Operacje_elementarne.Designer.cs">
+      <DependentUpon>Operacje_elementarne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Potęgowanie_macierzy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Potęgowanie_macierzy.Designer.cs">
+      <DependentUpon>Potęgowanie_macierzy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Mnożenie_macierzy_przez_skalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Mnożenie_macierzy_przez_skalar.Designer.cs">
+      <DependentUpon>Mnożenie_macierzy_przez_skalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Odejmowanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Odejmowanie.Designer.cs">
+      <DependentUpon>Odejmowanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Mnożenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Mnożenie.Designer.cs">
+      <DependentUpon>Mnożenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Layer2\Layer3\Figury_2D\Trójkąt_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_2D\Trójkąt_Form.Designer.cs">
+      <DependentUpon>Trójkąt_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_2D\Wielokąt_foremny_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_2D\Wielokąt_foremny_Form.Designer.cs">
+      <DependentUpon>Wielokąt_foremny_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_3D\Stożek_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_3D\Stożek_Form.Designer.cs">
+      <DependentUpon>Stożek_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_3D\Prostopadłościan_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Figury_3D\Prostopadłościan_Form.Designer.cs">
+      <DependentUpon>Prostopadłościan_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Transpozycja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Transpozycja.Designer.cs">
+      <DependentUpon>Transpozycja.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Layer2\Arytmetyka.resx">
+      <DependentUpon>Arytmetyka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Figury_2D.resx">
+      <DependentUpon>Figury_2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Figury_3D.resx">
+      <DependentUpon>Figury_3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Arytmetyka\Dzielenie_z_resztą_Form.resx">
+      <DependentUpon>Dzielenie_z_resztą_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Arytmetyka\Funkcja_kwadratowa_Form.resx">
+      <DependentUpon>Funkcja_kwadratowa_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Arytmetyka\Funkcja_liniowa_Form.resx">
+      <DependentUpon>Funkcja_liniowa_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Arytmetyka\NWW_NWD_Form.resx">
+      <DependentUpon>NWW_NWD_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Figury_2D\Czworokąt_Form.resx">
+      <DependentUpon>Czworokąt_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Figury_2D\Koło_Form.resx">
+      <DependentUpon>Koło_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Figury_2D\Trójkąt_Form.resx">
+      <DependentUpon>Trójkąt_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Figury_2D\Wielokąt_foremny_Form.resx">
+      <DependentUpon>Wielokąt_foremny_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Figury_3D\Kula_Form.resx">
+      <DependentUpon>Kula_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Figury_3D\Ostrosłup_Form.resx">
+      <DependentUpon>Ostrosłup_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Figury_3D\Prostopadłościan_Form.resx">
+      <DependentUpon>Prostopadłościan_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Figury_3D\Stożek_Form.resx">
+      <DependentUpon>Stożek_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Operacje_na_dwóch_macierzach_Form.resx">
+      <DependentUpon>Operacje_na_dwóch_macierzach_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Dodawanie.resx">
+      <DependentUpon>Dodawanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Iloczyn_Hadamarda.resx">
+      <DependentUpon>Iloczyn_Hadamarda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Iloczyn_Kroneckera.resx">
+      <DependentUpon>Iloczyn_Kroneckera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Mnożenie.resx">
+      <DependentUpon>Mnożenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_dwóch_macierzach\Odejmowanie.resx">
+      <DependentUpon>Odejmowanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Operacje_na_jednej_macierzy_Form.resx">
+      <DependentUpon>Operacje_na_jednej_macierzy_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Charakterystyka_macierzy.resx">
+      <DependentUpon>Charakterystyka_macierzy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Liczenie_macierzy_odwrotnej.resx">
+      <DependentUpon>Liczenie_macierzy_odwrotnej.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Liczenie_wyznacznika.resx">
+      <DependentUpon>Liczenie_wyznacznika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Liczenie_śladu.resx">
+      <DependentUpon>Liczenie_śladu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Mnożenie_macierzy_przez_skalar.resx">
+      <DependentUpon>Mnożenie_macierzy_przez_skalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Operacje_elementarne.resx">
+      <DependentUpon>Operacje_elementarne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Potęgowanie_macierzy.resx">
+      <DependentUpon>Potęgowanie_macierzy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Layer4-4,5\Layer 5\Operacje_na_jednej_macierzy\Transpozycja.resx">
+      <DependentUpon>Transpozycja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Macierze.resx">
+      <DependentUpon>Macierze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Deklaracja_drugiej_macierzy.resx">
+      <DependentUpon>Deklaracja_drugiej_macierzy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layer2\Layer3\Macierze\Deklaracja_pierwszej_macierzy.resx">
+      <DependentUpon>Deklaracja_pierwszej_macierzy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Menu.resx">
+      <DependentUpon>Main_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Opis.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

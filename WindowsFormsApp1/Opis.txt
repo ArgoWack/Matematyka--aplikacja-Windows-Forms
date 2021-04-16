@@ -1,0 +1,11 @@
+﻿
+
+1) Trójkąt i wielokąt foremny do poprawy
+
+trójkąt - metoda liczenia boku mając pole i 2 boki
+
+2) macierze - pierw znaleźć sposób na implementacje macierzy dowolnych rozmiarów
+
+3) Koło - chyba działa (do sprawdzenia)
+
+4) Reszta - do napisania zaczynając od logiki matematycznej, gotowe formularze
